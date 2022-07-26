@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+      <title> atividade Pratica3 </title>
+      <meta charset="utf-8">
+</head>
+
+<body background="images (1).jpg" text="white">
+      <font size="20" color="white">
+            <p align="center">
+                  Carros esportivos
+            </p>
+      </font>
+
+      <table border="0" width="500" align="center" bordercolor="black" bgcolor="Grey">
+
+            <tr>
+                  <td>
+
+                        <fieldset>
+                              <!--contorno ou margem para o formulário -->
+                              <legend align=""> Digite seus dados </legend>
+
+                              <form action="enviar.php" method="post" name="cadastro">
+                                    <table border="0" bordercolor="black">
+                                          <tr>
+                                                <td><label> Nome: </label></td>
+                                                <td><input type="text" id="nome" name="nome" size="30" maxlength="5"
+                                                            placeholder="Digite seu nome" required /></td>
+                                          </tr>
+
+                                          <tr>
+                                                <td><label> E-mail: </label></td>
+                                                <td><input type="email" id="mail" name="mail" size="30"
+                                                            placeholder="Digite seu e-mail" required /></td>
+                                          </tr>
+                                          <br /> <br />
+
+                                          <tr>
+                                                <td><label> Telefone: </label></td>
+                                                <td><input type="tel" id="tel" name="tel" size="30"
+                                                            placeholder="Digite seu telefone" required /></td>
+                                          </tr>
+                                          <br /> <br />
+
+                                          <tr>
+                                                <td><label> Data de Nascimento: </label></td>
+                                                <td><input type="date" id="data_nasc" name="data_nasc" min="1900-01-01"
+                                                            max="2004-07-01" required /></td>
+                                          </tr>
+
+                                          <tr>
+                                                <td><label> Senha: </label></td>
+                                                <td><input type="password" id="senha" name="senha" size="30"
+                                                            placeholder="Digite sua senha" maxlength="11" required />
+                                                </td>
+                                          </tr>
+
+                                          <tr>
+                                                <td><label> Sexo: </label></td>
+                                                <td><label></label><input type="radio" id="sexo" name="sexo" value="M"
+                                                            required />
+                                                      Masculino </label>
+                                                      <label></label><input type="radio" id="sexo" name="sexo" value="F"
+                                                            required />
+                                                      Feminino </label>
+                                                </td>
+                                          </tr>
+
+                                          <tr>
+                                          
+
+                                                <td><label> Carro: </label></td>
+                                                <td><select id="carro" name="carro" required>
+                                                            <option value="" selected="selected">--Selecione--</option>
+                                                           
+                                                            <optgroup label="BMW">
+                                                                  <option value="BMW X1">BMW X1 </option>
+                                                                  <option value="BMW X4">BMW X4 </option>
+                                                                  <option value="BMW X7">BMW X7 </option>
+                                                                  <option value="BMW X5">BMW X5 </option>
+                                                                  </optgroup>
+
+                                                                  <optgroup label=" Lamborghini">
+                                                                        <option value="Lamborghini Aventador"> Lamborghini Aventador </option>
+                                                                        <option value="Lamborghini Gallardo ">  Lamborghini Gallardo </option>
+                                                                        <option value=" Lamborghini Urus ">  Lamborghini Urus        </option>
+                                                                        <option value=" Lamborghini Huracán ">  Lamborghini Huracán  </option>
+                                                                        </optgroup>
+
+                                                            <optgroup label=" porsche">
+                                                                  <option value=" porsche Panamera ">porsche Panamera </option>
+                                                                  <option value=" porsche Macan ">porsche Macan </option>
+                                                                  <option value=" porsche Cayenne "> porsche Cayenne  </option>
+                                                                  <option value=" porsche 911 Turbo. 911 Sport Classic ">porsche 911 Turbo. 911 Sport Classic </option>
+                                                                  </optgroup>
+
+                                                            <optgroup label="AUDI">
+                                                                  <option value="AUDI A3 "> AUDI A3</option>
+                                                                  <option value="AUDI A4 "> AUDI A4</option>
+                                                                  <option value="AUDI A5 ">AUDI A5 </option>
+                                                                  <option value="AUDI E-TRON "> AUDI E-TRON</option>
+                                                                  </optgroup>
+
+                                                            <optgroup label="Ferrari">
+                                                                  <option value="Ferrari  Italia ">Ferrari  Italia </option>
+                                                                  <option value="Ferrari GTB ">Ferrari GTB </option>
+                                                                  <option value="Ferrari 250 GTO ">Ferrari 250 GTO  </option>
+                                                                  <option value="Ferrari 488 PISTA SPIDER "> Ferrari 488 PISTA SPIDER</option>
+                                                                  </optgroup>
+                                                      </select></td>
+                                          </tr>
+                                                          <td><label> Selecione a cor do carro desejada: </label> </td>
+                                                           <td><input type="color" name="cor" id="cor"required/></td>
+                                          <tr>
+                                                <td><label> Assunto: </label></td>
+
+                                                <td><textarea id="assunto" name="assunto" cols="40" rows="10"
+                                                            maxlength="240" placeholder=" Digite caso for preciso: (max=240)"
+                                                            ></textarea> <br></td>
+                                          </tr>
+
+                                          <tr>
+                                                <td><label> Anexar arquivo dos documentos: </label></td>
+                                                <td><input type="file" id="anexo" name="anexo" required /></td>
+                                          </tr>
+
+
+                                          <th colspan="2"><input type="submit" id="enviar" name="enviar"
+                                                      value="ENVIAR" />
+                                                <input type="reset" id="limpar" name="limpar" value="LIMPAR" />
+
+                                                <button type="submit" id="send" name="send">
+                                                      <img src="img4.png" width="20" height="20" />
+                                                </button>
+                                          </th>
+            </tr>
+      </table>
+      </form>
+      </fieldset>
+      </td>
+      </tr>
+      </table>
+</body>
+
+</html>
